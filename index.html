@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bookinista | E-Book Store</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!--.first section: header.-->
+  <div class="header">
+   <div class="container">	
+	 <div class="navbar">
+	   <div class="logo">
+	      <img src="images/logo1.png" width="200">
+	   </div>
+	   <nav>
+	       <ul id="MenuItems">
+		      <li><a href="index.html">Home</a></li>
+			  <li><a href="products.html">Books</a></li>
+			  <li><a href="">About</a></li>
+			  <li><a href="">Contact</a></li>
+			  <li><a href="account.html">Account</a></li>
+		   </ul>
+	   </nav>
+	   <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+       <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+	 </div>
+	 <div class="row">
+	    <div class="col-2">
+		    <h1>Welcome to Bookinista!<br>Your Gateway to Stories, Adventures, and Worlds Beyond!</h1>
+			<p>Explore a treasure trove of books, novels, and manga that cater to every reader’s 
+			imagination. Whether you're diving into epic fantasy novels, unraveling thrilling 
+			mysteries, or immersing yourself in captivating manga stories, we’ve got you covered.</p>
+			<a href="" class="btn">Explore Now! &#8594;</a>
+		</div>
+		<div class="col-2">
+		    <img src="images/image2.png">
+		</div>
+	 </div>
+	 
+   </div>
+  </div>
+  
+  <!--.second section: featured categories.-->
+  <div class="categories">
+    <div class="small-container">
+     <div class="row">
+	    <div class="col-3">
+		   <img src="images/novel07.jpg">
+		</div>
+		<!--
+	    <div class="col-3">
+		   <img src="images/novel02.jpg">
+		</div>
+		-->
+	    <div class="col-3">
+		   <img src="images/manga02.jpg">
+		</div>
+	    <div class="col-3">
+		   <img src="images/manga07.jpg">
+		</div>
+	 </div>
+	</div>
+  </div>
+
+  <!--.third section: features books.-->  
+  <div class="small-container">
+  
+	 
+     <h2 class="title">Featured Novels</h2>
+	 <div class="row">
+	     <div class="col-4">
+		     <a href="product-details.html"><img src="images/novel01.jpg">
+			 <h4><a href="product-details.html">Daughter Of The Pirate King</a></h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>	
+			 </div>
+			 <p>219.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/novel03.jpg">
+			 <h4>The Wicked King</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>	
+			 </div>
+			 <p>149.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/novel04.jpg">
+			 <h4>A Good Girl's Guide To Murder</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+			 </div>
+			 <p>119.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/novel10.jpg">
+			 <h4>The Inheritance Games</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			 </div>
+			 <p>109.00 MAD</p>
+		 </div>
+	 </div>
+	 
+     <h2 class="title">Featured Manga</h2>
+	 <div class="row">
+	     <div class="col-4">
+		     <img src="images/manga11.jpg">
+			 <h4>One Piece Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i> <!-- half star -->
+				<!-- empty star: <i class="fa fa-star-o"></i> -->	
+			 </div>
+			 <p>85.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga06.jpg">
+			 <h4>Jujutsu Kaisen Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>  <!-- empty star -->	
+			 </div>
+			 <p>89.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga04.jpg">
+			 <h4>Attack On Titan Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>	
+			 </div>
+			 <p>99.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga05.jpg">
+			 <h4>Demon Slayer Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i> <!-- half star -->
+			 </div>
+			 <p>89.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga08.jpg">
+			 <h4>Takane & Hana Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i> <!-- half star -->
+			 </div>
+			 <p>89.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga10.jpg">
+			 <h4>A Sign Of Affection Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i> <!-- half star -->
+			 </div>
+			 <p>99.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga12.jpg">
+			 <h4>The Apothecary Diaries Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i> <!-- half star -->
+			 </div>
+			 <p>109.00 MAD</p>
+		 </div>
+	     <div class="col-4">
+		     <img src="images/manga09.jpg">
+			 <h4>My Love Story with Yamada-kun at Lv999 Volume 1</h4>
+			 <div class="rating">
+			    <i class="fa fa-star"></i> <!-- star icon Font Awesome 4 -->
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i> <!-- half star -->
+			 </div>
+			 <p>99.00 MAD</p>
+		 </div>
+	 </div>
+  </div>
+  
+  
+  <!--.fourth section: offer.-->
+  <div class="offer">
+      <div class="small-container">
+	      <div class="row">
+		      <div class="col-2">
+			     <img src="images/offer.png" class="offer-img">
+			  </div>
+			  <div class="col-2">
+			      <p>Limited-Time Offer</p>
+				  <h1>Get the Third Book at Half Price!</h1>
+				  <small>Don’t miss out! For this month only, grab the third 
+				  book in the series at an unbeatable 50% off. Complete your 
+				  collection or dive into the story at an incredible value. 
+				  Hurry—this exclusive deal ends soon!</small>
+				  <br>
+				  <a href="#" class="btn">Get Offer &#8594;</a>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  
+  <!--.fifth section: testimonial.-->
+  <div class="testimonial">
+      <div class="small-container">
+	      <div class="row">
+		      <div class="col-3">
+			      <i class="fa fa-quote-left"></i>
+			      <p>They are the best, I can find whatever novel and whatever manga I'm looking for.
+				  Definitly recommend!</p>
+				  <div class="rating">
+			          <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+			      </div>
+				  <img src="images/user1.JPG">
+				  <h3>Alya A.</h3>
+		      </div>
+		      <div class="col-3">
+			      <i class="fa fa-quote-left"></i>
+			      <p>For every bookworm like me out there, this is you heaven on earth.
+				  My last purchase was a week ago and I'm already refilling my cart!</p>
+				  <div class="rating">
+			          <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star-half-o"></i>
+			      </div>
+				  <img src="images/user2.JPG">
+				  <h3>Osman B.</h3>
+		      </div>
+			  <!--
+		      <div class="col-3">
+			      <i class="fa fa-quote-left"></i>
+			      <p>As a manga lover, bookinista is my first choice to acquire my physical manga.
+				  My collection is getting bigger thanks to you guys!</p>
+				  <div class="rating">
+			          <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star-half-o"></i>
+			      </div>
+				  <img src="images/user4.JPG">
+				  <h3>Ryan S.</h3>
+		      </div>
+			  -->
+		      <div class="col-3">
+			      <i class="fa fa-quote-left"></i>
+			      <p>Very practical, I am loving it. Whatever it is, e-book or physical book,
+				   they have it all.<br>Thumbs up!</p>
+				  <div class="rating">
+			          <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star"></i>
+				      <i class="fa fa-star-half-o"></i>
+			      </div>
+				  <img src="images/user3.JPG">
+				  <h3>Sarah M.</h3>
+		      </div>
+	      </div>
+      </div>
+  </div>  
+  
+  
+  <!--.last section: footer.-->
+  <div class="footer">
+      <div class="container">
+	      <div class="row">
+		      <div class="footer-col1">
+			     <h3>Download The App</h3>
+			     <p>Download the App for Android and IOS smart phone.</p>
+				 <div class="app-logo">
+				     <img src="images/play-store.png">
+				     <img src="images/app-store.png">
+				 </div>
+			  </div>
+		      <div class="footer-col2">
+			     <img src="images/logo1.png">
+			     <p>Step into a world of imagination, adventure, and creativity. Whether it’s 
+			  heartwarming novels, edge-of-your-seat thrillers, or visually stunning manga, 
+			  Bookinista is your ultimate destination.</p>
+			  </div>
+		      <div class="footer-col3">
+			     <h3>Useful Links</h3>
+			     <ul>
+				    <li>Coupons</li>
+				    <li>Return Policy</li>
+				    <li>Affiliated Brands</li>
+			     </ul>
+			  </div>
+		      <div class="footer-col4">
+			     <h3>Follow Us</h3>
+			     <ul>
+				    <li>Facebook</li>
+				    <li>Instagram</li>
+				    <li>Youtube</li>
+			     </ul>
+			  </div>
+		  </div>
+		  <hr>
+		  <p class="copyright">Copyright 2025 - Bookinista</p>
+	  </div>
+  </div>
+	
+	
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+
+	
+</body>
+
+</html>
